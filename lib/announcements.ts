@@ -10,8 +10,8 @@ export async function GetTopAnnouncements(count: number) {
           results {
             Title: d6261_Title
             Description: d6261_Description
-            Url: announcementURL
-            hasUrl: hasURL
+            Url: d6261_announcementURL
+            hasUrl: hasUrl
             Id: id
           }
         }

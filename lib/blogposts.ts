@@ -13,11 +13,6 @@ export async function GetLatestBlogposts(count: number) {
             Body: blog_Body
             Id: id
             PublishDate: content_PublishedOn
-            Categories: blogCategoryToContent {
-              results {
-                Name: taxonomyName
-              }
-            }
           }
         }
       }
@@ -38,11 +33,6 @@ export async function GetBlogpostByTitle(title: string): Promise<Blogpost> {
             Body: blog_Body
             Id: id
             PublishDate: content_PublishedOn
-            Categories: blogCategoryToContent {
-              results {
-                Name: taxonomyName
-              }
-            }
           }
         }
       }
