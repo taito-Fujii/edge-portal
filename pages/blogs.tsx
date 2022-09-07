@@ -66,7 +66,7 @@ export default function Blogs({ blogposts }: { blogposts: Blogpost[] }) {
 	return (
 		<div>
 			<Head>
-				<title>Blogs</title>
+				<title>Blogs demo</title>
 			</Head>
 
 			<NavBar />
