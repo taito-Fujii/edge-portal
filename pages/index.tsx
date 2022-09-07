@@ -52,7 +52,7 @@ export default function Home({
 
 	return (
 		<>
-			<Head>Sitecore Experience Edge Portal</Head>
+			<Head>Sitecore Experience Edge Portal Prev</Head>
 
 			<NavBar />
 
