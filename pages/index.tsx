@@ -65,6 +65,7 @@ export default function Home({
 			<Container maxWidth="lg" className={classes.grey}>
 				<LatestNewsAndArticles announcements={announcements} blogposts={blogposts} />
 			</Container>
+			<Footer />
 		</>
 	);
 }
