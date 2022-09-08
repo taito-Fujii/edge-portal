@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
 	box: {
 		backgroundColor: '#424242',
 		backgroundImage: 'url(https://edge-microsite-400.stylelabs.io/api/public/content/7837d76bb0354f05a2fc2c27cc2631a5?v=08ecbd49&t=w2560h280)',
-		padding: '5rem',
+		padding: '2rem',
 		borderRadius: '0',
 		marginTop: 0,
 		marginBottom: 0,
@@ -24,12 +24,9 @@ export default function HeroBanner({ data }: { data: HeroBannerData }) {
 	const classes = useStyles();
 
 	return (
-		<Box my={4} className={classes.box}>
+		<Box my={2} className={classes.box}>
 			<Typography className={classes.title} variant="h4" component="h1" gutterBottom>
 				{data.Title}
-			</Typography>
-			<Typography className={classes.title} variant="h5" component="h1" gutterBottom>
-				{data.SubTitle}
 			</Typography>
 		</Box>
 	);

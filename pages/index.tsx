@@ -52,30 +52,19 @@ export default function Home({
 
 	return (
 		<>
-			<Head>Sitecore Experience Edge Portal</Head>
+			<Head>
+				<title>
+					Content Hub Edge Demo
+				</title>
+			</Head>
 
 			<NavBar />
 
 			<HeroBanner data={heroBannerData} />
 
-			<Box className={classes.ctaCards}>
-				<Container maxWidth="lg">
-					<CallToActionCards />
-				</Container>
-			</Box>
-
 			<Container maxWidth="lg" className={classes.grey}>
 				<LatestNewsAndArticles announcements={announcements} blogposts={blogposts} />
-				<ThreeVideoGrid videos={youTubeData} />
 			</Container>
-
-			<Box width={1} className={classes.white}>
-				<Container maxWidth="lg" className={classes.white}>
-					<StackOverflow />
-				</Container>
-			</Box>
-
-			<Footer />
 		</>
 	);
 }

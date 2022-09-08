@@ -9,6 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { SingleAnnoucement } from './singleAnnoucement';
 import { Announcement } from '../interfaces/announcements';
 import { Blogpost } from '../interfaces/blogposts';
+import Link from 'next/link';
 
 export const useStyles = makeStyles((theme) => ({
 	gridPadding: {
@@ -61,7 +62,9 @@ export function LatestNewsAndArticles({ announcements, blogposts }: { announceme
 			<Grid item xs={12} md={8}>
 				<Box>
 					<Typography variant="h3" component="h3" gutterBottom>
-						Latest News
+						<Link href="/blogs">
+							Latest Blogs
+						</Link>
 					</Typography>
 					<List className={classes.articleList}>
 						{blogposts.map(({ Title, Abstract, PublishDate }) => (
@@ -70,7 +73,9 @@ export function LatestNewsAndArticles({ announcements, blogposts }: { announceme
 									className={classes.listItemText}
 									primary={
 										<React.Fragment>
-											{Title}
+											<Link href={`/blogs/${Title}`}>
+												{Title}												
+											</Link>
 											<Typography component="span" className={classes.date} color="textPrimary">
 												{PublishDate}
 											</Typography>
